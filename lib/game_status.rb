@@ -64,8 +64,8 @@ end
 def winner(board)
   if won?(board)!=false
     winning_combo=won?(board)
-    winning_combo.each do |winning_index|
-      return board[winning_index]
+    winning_combo.each do |winning_letter_index|
+      return board[winning_letter_index]
     end
   else
     return nil
